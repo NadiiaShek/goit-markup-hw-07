@@ -1,0 +1,88 @@
+.benifits-bg {
+	display: flex;
+	width: 270px;
+	height: 120px;
+	margin-bottom: 30px;
+	background-color: var(--our-team-background-color);
+	justify-content: center;
+	align-items: center;
+}
+.our-benefits__list {
+	display: flex;
+}
+.our-benefits__item {
+	flex-basis: calc((100% - 3 * 30px) / 3);
+}
+
+.our-benefits__item:not(:last-child) {
+	margin-right: 30px;
+}
+
+.our-benefits__title {
+	margin-bottom: 10px;
+
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
+.our-benefits {
+	padding-top: 89px;
+	padding-bottom: 94px;
+}
+.our-benefits__text {
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: var(--main-text-color);
+}
+
+.main-directions__item {
+	position: relative;
+	flex-basis: calc((100% - 2 * 30px) / 3);
+}
+
+.main-directions__item:not(:last-child) {
+	margin-right: 30px;
+}
+
+.main-directions__list {
+	display: flex;
+}
+
+.main-directions__title {
+	margin-bottom: 50px;
+
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.16;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--body-text-color);
+}
+
+.main-directions {
+	display: flex;
+	padding-bottom: 94px;
+}
+
+.main-directions__label {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	width: 370px;
+	height: 70px;
+	justify-content: center;
+	align-items: center;
+
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	text-align: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	background: rgba(47, 48, 58, 0.8);
+	color: var(--second-text-color);
+}

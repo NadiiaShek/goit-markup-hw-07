@@ -1,0 +1,63 @@
+.hero {
+	max-width: 1600px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 200px;
+	padding-bottom: 200px;
+	color: var(--second-text-color);
+	background-color: var(--second-background);
+	background-image: linear-gradient(
+			rgba(47, 48, 58, 0.4),
+			rgba(47, 48, 58, 0.4)
+		),
+		url(../images/Hero-bg-img.jpeg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.hero .title {
+	display: block;
+	text-align: center;
+	max-width: 706px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 40px;
+
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 1.36;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+}
+
+.hero .button {
+	display: flex;
+	flex-direction: center;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border-style: none;
+	padding: 10px 32px;
+	margin-right: auto;
+	margin-left: auto;
+
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	letter-spacing: 0.06em;
+	color: var(--btn-text-color);
+	background-color: var(--btn-background-color);
+	border-radius: 4px;
+
+	transition: background-color;
+}
+
+.hero .button:hover,
+.hero .button:focus {
+	background-color: var(--btn-background-color2);
+	transition: background-color var(--animation-timing-function);
+}
