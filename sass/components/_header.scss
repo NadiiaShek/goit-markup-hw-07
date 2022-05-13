@@ -34,8 +34,8 @@
 	transition: color var(--animation-timing-function);
 }
 
-.link-decoration.current::after {
-	position: absolute;
+.link-decoration.current {
+	&::after {position: absolute;
 	bottom: 0;
 	left: 0;
 	content: "";
@@ -44,7 +44,8 @@
 	height: 4px;
 	background-color: var(--focus-hover-color);
 	border-radius: 2px;
-	transition: color var(--animation-timing-function);
+	transition: color var(--animation-timing-function);}
+	
 }
 
 .navigation__item:not(:last-child) {
@@ -68,11 +69,14 @@ header {
 	border-bottom: var(--border-style);
 }
 
-.list .link-decoration:hover,
-.list .link-decoration:focus {
-	color: var(--focus-hover-color);
-	transition: color var(--animation-timing-function);
+.list .link-decoration {
+	&:hover {color: var(--focus-hover-color);
+	transition: color var(--animation-timing-function);}
+	&:focus {color: var(--focus-hover-color);
+	transition: color var(--animation-timing-function);}
+	
 }
+
 .list .link-decoration.current {
 	color: var(--focus-hover-color);
 }
@@ -108,8 +112,9 @@ header {
 	fill: currentColor;
 }
 
-.navigation__link:hover,
-.navigation__link:focus {
-	color: var(--focus-hover-color);
-	transition: color var(--animation-timing-function);
+.navigation__link {
+	&:hover {color: var(--focus-hover-color);
+	transition: color var(--animation-timing-function);}
+	&:focus {color: var(--focus-hover-color);
+	transition: color var(--animation-timing-function);}
 }

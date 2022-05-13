@@ -47,10 +47,12 @@
 .footer-contacts__link {
 	transition: color var(--animation-timing-function);
 }
-.footer-contacts__link:hover,
-.footer-contacts__link:focus {
-	color: var(--focus-hover-color);
+.footer-contacts__link {
+	&:hover {color: var(--focus-hover-color);
+	transition: color var(--animation-timing-function);}
+	&:focus {color: var(--focus-hover-color);
 	transition: color var(--animation-timing-function);
+	}
 }
 
 .address-block {
@@ -115,10 +117,12 @@
 	transition: background-color var(--animation-timing-function);
 }
 
-.social-footer__link:hover,
-.social-footer__link:focus {
-	background-color: var(--focus-hover-color);
-	transition: background-color var(--animation-timing-function);
+.social-footer__link {
+	&:hover {background-color: var(--focus-hover-color);
+	transition: background-color var(--animation-timing-function);}
+	&:focus {background-color: var(--focus-hover-color);
+	transition: background-color var(--animation-timing-function);}
+	
 }
 
 .title-wrap {

@@ -56,8 +56,9 @@
 	transition: background-color;
 }
 
-.hero .button:hover,
-.hero .button:focus {
-	background-color: var(--btn-background-color2);
-	transition: background-color var(--animation-timing-function);
+.hero .button {
+	&:hover {background-color: var(--btn-background-color2);
+	transition: background-color var(--animation-timing-function);}
+	&:focus {background-color: var(--btn-background-color2);
+	transition: background-color var(--animation-timing-function);}
 }

@@ -55,11 +55,13 @@
 	transition: color var(--animation-timing-function);
 }
 
-.close-modal:hover,
-.close-modal:focus {
-	fill: var(--focus-hover-color);
+.close-modal {
+	&:hover {fill: var(--focus-hover-color);
 	cursor: var(--custom-pointer);
-	transition: color;
+	transition: color;}
+	&:focus {fill: var(--focus-hover-color);
+	cursor: var(--custom-pointer);
+	transition: color;}
 }
 
 .is-hidden {
@@ -88,12 +90,15 @@
 	transition: border-color var(--animation-timing-function);
 }
 
-.modale-input:hover,
-.modale-input:focus {
-	border-color: var(--focus-hover-color);
+.modale-input {
+	&:hover {border-color: var(--focus-hover-color);
 	cursor: var(--custom-pointer);
 	transition: border-color var(--animation-timing-function);
-	transition: fill var(--animation-timing-function);
+	transition: fill var(--animation-timing-function);}
+	&:focus {border-color: var(--focus-hover-color);
+	cursor: var(--custom-pointer);
+	transition: border-color var(--animation-timing-function);
+	transition: fill var(--animation-timing-function);}
 }
 
 .label-modale {
@@ -123,10 +128,19 @@
 	cursor: pointer;
 }
 
-.modale-input:hover + .icon-person-modale,
-.modale-input:focus + .icon-person-modale {
-	fill: var(--focus-hover-color);
-	transition: fill var(--animation-timing-function);
+.modale-input {
+	&:focus + .icon-person-modale {fill: var(--focus-hover-color);
+	transition: fill var(--animation-timing-function);}
+	&:hover + .icon-person-modale {fill: var(--focus-hover-color);
+	transition: fill var(--animation-timing-function);}
+	&:focus + .icon-telephone-modale {fill: var(--focus-hover-color);
+	transition: fill var(--animation-timing-function);}
+	&:hover + .icon-telephone-modale {fill: var(--focus-hover-color);
+	transition: fill var(--animation-timing-function);}
+	&:focus + .icon-envelope-modale {fill: var(--focus-hover-color);
+	transition: fill var(--animation-timing-function);}
+	&:hover + .icon-envelope-modale {fill: var(--focus-hover-color);
+	transition: fill var(--animation-timing-function);}
 }
 
 .field-tel-wrap {
@@ -146,11 +160,7 @@
 	cursor: var(--custom-pointer);
 }
 
-.modale-input:hover + .icon-telephone-modale,
-.modale-input:focus + .icon-telephone-modale {
-	fill: var(--focus-hover-color);
-	transition: fill var(--animation-timing-function);
-}
+
 
 .field-email-wrap {
 	position: relative;
@@ -170,11 +180,6 @@
 	cursor: var(--custom-pointer);
 }
 
-.modale-input:hover + .icon-envelope-modale,
-.modale-input:focus + .icon-envelope-modale {
-	fill: var(--focus-hover-color);
-	transition: fill var(--animation-timing-function);
-}
 
 .modal-comment {
 	margin-bottom: 20px;
@@ -194,12 +199,15 @@
 	color: rgba(117, 117, 117, 0.5);
 }
 
-.comment-modale:focus,
-.comment-modale:hover {
-	border: 1px solid var(--focus-hover-color);
+.comment-modale {
+	&:focus {border: 1px solid var(--focus-hover-color);
 	outline-color: var(--focus-hover-color);
 	transition: fill var(--animation-timing-function);
-	cursor: var(--custom-pointer);
+	cursor: var(--custom-pointer);}
+	&:hover {border: 1px solid var(--focus-hover-color);
+	outline-color: var(--focus-hover-color);
+	transition: fill var(--animation-timing-function);
+	cursor: var(--custom-pointer);}
 }
 
 .modal-policy {
@@ -221,10 +229,10 @@
 	margin-right: 7px;
 }
 
-.checkbox-modale:focus + .custom-checkbox,
-.checkbox-modale:hover + .custom-checkbox {
-	border: solid 2px var(--focus-hover-color);
-	cursor: var(--custom-pointer);
+.checkbox-modale {
+	&:focus + .custom-checkbox {border: solid 2px var(--focus-hover-color);
+	cursor: var(--custom-pointer);}
+	
 }
 
 .icon-checkbox {
@@ -258,17 +266,19 @@
 	color: var(--current-color);
 }
 
-.text-checkbox:hover + .policy-link,
-.text-checkbox:hover + .policy-link {
-	outline-color: var(--focus-hover-color);
-	border: 1px solid var(--focus-hover-color);
+.text-checkbox {
+	&:hover + .policy-link {outline-color: var(--focus-hover-color);
+	border: 1px solid var(--focus-hover-color);}
+	&:focus + .policy-link {outline-color: var(--focus-hover-color);
+	border: 1px solid var(--focus-hover-color);}
 }
 
-.checkbox-modale:checked + span .icon-checkbox {
-	background-color: var(--focus-hover-color);
+.checkbox-modale {
+	&:checked + span .icon-checkbox {background-color: var(--focus-hover-color);
 	border: none;
 	fill: #ffffff;
-	border-radius: 3px;
+	border-radius: 3px;}
+	
 }
 
 .btn-send-modale {

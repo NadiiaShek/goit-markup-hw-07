@@ -34,9 +34,12 @@
 	fill: var(--color-soc-icons);
 	transition: color var(--animation-timing-function);
 }
-.regular-clients__link:hover,
-.regular-clients__link:focus {
+.regular-clients__link {
+	&:hover {border: 1px solid var(--focus-hover-color);
+	fill: var(--focus-hover-color);
+	transition: color var(--animation-timing-function);}
+    &:focus {
 	border: 1px solid var(--focus-hover-color);
 	fill: var(--focus-hover-color);
-	transition: color var(--animation-timing-function);
-}
+	transition: color var(--animation-timing-function);}
+	}
