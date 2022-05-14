@@ -35,7 +35,7 @@ button {
   list-style: none;
 }
 
-.link-decoration {
+.social-footer__link, .footer-contacts__link, .footer-contacts__logo, .list .link-decoration, .navigation__link, .navigation__logo {
   text-decoration: none;
   color: inherit;
 }
@@ -108,11 +108,11 @@ h6 {
   transition: color var(--animation-timing-function);
 }
 
-.link-decoration.current {
+.current {
   transition: color var(--animation-timing-function);
 }
 
-.link-decoration.current::after {
+.current::after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -645,7 +645,6 @@ header {
 .footer-contacts__link {
   transition: color var(--animation-timing-function);
 }
-
 .footer-contacts__link:hover, .footer-contacts__link:focus {
   color: var(--focus-hover-color);
   transition: color var(--animation-timing-function);
