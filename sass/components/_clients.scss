@@ -11,8 +11,7 @@
 }
 
 .regular-clients__list {
-	display: flex;
-	justify-content: center;
+	@extend %centeredFlex; 
 	color: var(--color-soc-icons);
 	@extend %list;
 }
@@ -28,14 +27,12 @@
 	border: 1px solid #afb1b8;
 	border-radius: 4px;
 	@extend %centeredFlex;
-	cursor: pointer;
+	@extend %link-decoration;
 	fill: var(--color-soc-icons);
 	transition: color var(--animation-timing-function);
-	@extend %link-decoration
-}
-
-.regular-clients__link {
+	
 	&:hover, &:focus {border: 1px solid var(--focus-hover-color);
 	fill: var(--focus-hover-color);
 	transition: color var(--animation-timing-function);}
-	}
+}
+

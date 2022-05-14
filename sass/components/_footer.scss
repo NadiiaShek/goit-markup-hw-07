@@ -45,7 +45,7 @@
 	transition: color var(--animation-timing-function);
 	&:hover, &:focus {color: var(--focus-hover-color);
 	transition: color var(--animation-timing-function);}
-	@extend %link-decoration
+	@extend %link-decoration;
 }
 
 
@@ -106,15 +106,11 @@
 	@extend %centeredFlex;
 	fill: #ffffff;
 	transition: background-color var(--animation-timing-function);
-	@extend %link-decoration
+	@extend %link-decoration;
+    &:hover, &:focus {background-color: var(--focus-hover-color);
+	transition: background-color var(--animation-timing-function);}
 }
 
-.social-footer__link {
-	&:hover, &:focus {background-color: var(--focus-hover-color);
-	transition: background-color var(--animation-timing-function);}
-	@extend %link-decoration
-	
-}
 
 .title-wrap {
 	display: flex;
@@ -165,10 +161,7 @@
 }
 
 .btn-subc-footer {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-
+	@extend %centeredFlex;
 	width: 200px;
 	height: 50px;
 	background: var(--btn-background-color);

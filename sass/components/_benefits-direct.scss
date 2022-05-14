@@ -1,12 +1,11 @@
 .benifits-bg {
-	display: flex;
+	@extend %centeredFlex;
 	width: 270px;
 	height: 120px;
 	margin-bottom: 30px;
 	background-color: var(--our-team-background-color);
-	justify-content: center;
-	align-items: center;
 }
+
 .our-benefits__list {
 	display: flex;
 	@extend %list;
