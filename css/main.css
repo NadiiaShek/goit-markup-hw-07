@@ -30,7 +30,7 @@
   cursor: pointer;
 }
 
-.icon-checkbox, .custom-checkbox, .btn-send-modale, .close-modal, .close-btn, .policy-link, .text-checkbox, .modal-policy, .backdrop, .icon-send-footer, .btn-subc-footer, .email-wrap, .social-footer__link, .regular-clients__link, .regular-clients__list, .filtr-portfolio__list, .team-soc-link, .team-soc-list, .main-directions__label, .benifits-bg, .hero .button, .contacts-group__icon, .navigation__link, .navigation__logo {
+.icon-checkbox, .custom-checkbox, .btn-send-modale, .close-modal, .close-btn, .policy-link, .text-checkbox, .modal-policy, .backdrop, .icon-send-footer, .email-wrap, .social-footer__link, .regular-clients__link, .regular-clients__list, .filtr-portfolio__list, .team-soc-link, .team-soc-list, .main-directions__label, .benifits-bg, .hero .button, .contacts-group__icon, .navigation__link, .navigation__logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -725,6 +725,8 @@ header {
 }
 
 .btn-subc-footer {
+  display: flex;
+  align-items: center;
   width: 200px;
   height: 50px;
   background: var(--btn-background-color);
