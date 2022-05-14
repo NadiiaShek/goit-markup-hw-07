@@ -26,19 +26,14 @@
 
 .footer-address {
 	margin-bottom: 9px;
-
 	font-style: normal;
-	font-size: 14px;
-	line-height: 1.71;
-	letter-spacing: 0.03em;
+	@extend %textMain;
 	color: var(--second-text-color);
 }
 
 .footer-contacts__list {
 	font-style: normal;
-	font-size: 14px;
-	line-height: 1.71;
-	letter-spacing: 0.03em;
+	@extend %textMain;
 	color: rgba(255, 255, 255, 0.6);
 	@extend %list;
 }
@@ -88,10 +83,7 @@
 	margin-right: 0;
 	margin-bottom: 20px;
 
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 1.14;
-	letter-spacing: 0.03em;
+	@extend %textSizeTitle3;
 	font-style: normal;
 	text-transform: uppercase;
 	color: var(--second-text-color);
@@ -111,9 +103,7 @@
 	height: 44px;
 	background-color: rgba(255, 255, 255, 0.1);
 	border-radius: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	@extend %centeredFlex;
 	fill: #ffffff;
 	transition: background-color var(--animation-timing-function);
 	@extend %link-decoration
@@ -132,12 +122,11 @@
 
 .email-wrap {
 	position: relative;
-	display: flex;
+	@extend %centeredFlex;
 	height: 50px;
 	flex-wrap: nowrap;
 	flex-direction: end;
-	align-items: center;
-	justify-content: center;
+	
 }
 
 .subscription-footer {
@@ -152,10 +141,7 @@
 	display: flex;
 	margin-left: 0;
 	margin-bottom: 20px;
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 1.14;
-	letter-spacing: 0.03em;
+	@extend %textSizeTitle3;
 	text-transform: uppercase;
 	color: var(--second-text-color);
 }
@@ -204,9 +190,7 @@
 	top: 50%;
 	left: 95%;
 	transform: translateY(-50%) translateX(-95%);
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	@extend %centeredFlex;
 	width: 24px;
 	height: 24px;
 	fill: #ffffff;

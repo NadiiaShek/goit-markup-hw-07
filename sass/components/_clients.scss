@@ -5,11 +5,9 @@
 
 .regular-clients__title {
 	margin-bottom: 50px;
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 1.16;
 	text-align: center;
-	letter-spacing: 0.03em;
+	@extend %title2; 
+	
 }
 
 .regular-clients__list {
@@ -29,13 +27,13 @@
 	height: 92px;
 	border: 1px solid #afb1b8;
 	border-radius: 4px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	@extend %centeredFlex;
 	cursor: pointer;
 	fill: var(--color-soc-icons);
 	transition: color var(--animation-timing-function);
+	@extend %link-decoration
 }
+
 .regular-clients__link {
 	&:hover, &:focus {border: 1px solid var(--focus-hover-color);
 	fill: var(--focus-hover-color);

@@ -72,14 +72,14 @@ header {
 	border-bottom: var(--border-style);
 }
 
-.list .link-decoration {
+.navigation__link {
 	&:hover, &:focus {color: var(--focus-hover-color);
 	transition: color var(--animation-timing-function);}
 	@extend %link-decoration
 	
 }
 
-.list .link-decoration.current {
+.current {
 	color: var(--focus-hover-color);
 }
 
@@ -113,11 +113,4 @@ header {
 	align-items: center;
 	justify-content: center;
 	fill: currentColor;
-}
-
-.navigation__link {
-	&:hover, &:focus {color: var(--focus-hover-color);
-	transition: color var(--animation-timing-function);}
-	@extend %link-decoration
-	
 }

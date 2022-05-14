@@ -4,9 +4,7 @@
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.2);
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	@extend %centeredFlex;
 	transition: opacity var(--animation-timing-function),
 		visibility var(--animation-timing-function);
 }
@@ -42,24 +40,17 @@
 }
 
 .close-btn {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	@extend %centeredFlex;
 }
 
 .close-modal {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	@extend %centeredFlex;
 	fill: var(--color-close-modal);
 	transition: color var(--animation-timing-function);
 }
 
 .close-modal {
-	&:hover {fill: var(--focus-hover-color);
-	cursor: var(--custom-pointer);
-	transition: color;}
-	&:focus {fill: var(--focus-hover-color);
+	&:hover, &:focus {fill: var(--focus-hover-color);
 	cursor: var(--custom-pointer);
 	transition: color;}
 }
@@ -91,14 +82,11 @@
 }
 
 .modale-input {
-	&:hover {border-color: var(--focus-hover-color);
+	&:hover, &:focus {border-color: var(--focus-hover-color);
 	cursor: var(--custom-pointer);
 	transition: border-color var(--animation-timing-function);
 	transition: fill var(--animation-timing-function);}
-	&:focus {border-color: var(--focus-hover-color);
-	cursor: var(--custom-pointer);
-	transition: border-color var(--animation-timing-function);
-	transition: fill var(--animation-timing-function);}
+	
 }
 
 .label-modale {
@@ -129,18 +117,15 @@
 }
 
 .modale-input {
-	&:focus + .icon-person-modale {fill: var(--focus-hover-color);
+	&:focus + .icon-person-modale, &:hover + .icon-person-modale {fill: var(--focus-hover-color);
 	transition: fill var(--animation-timing-function);}
-	&:hover + .icon-person-modale {fill: var(--focus-hover-color);
+	
+	&:focus + .icon-telephone-modale, &:hover + .icon-telephone-modale {fill: var(--focus-hover-color);
 	transition: fill var(--animation-timing-function);}
-	&:focus + .icon-telephone-modale {fill: var(--focus-hover-color);
+	
+	&:focus + .icon-envelope-modale, &:hover + .icon-envelope-modale {fill: var(--focus-hover-color);
 	transition: fill var(--animation-timing-function);}
-	&:hover + .icon-telephone-modale {fill: var(--focus-hover-color);
-	transition: fill var(--animation-timing-function);}
-	&:focus + .icon-envelope-modale {fill: var(--focus-hover-color);
-	transition: fill var(--animation-timing-function);}
-	&:hover + .icon-envelope-modale {fill: var(--focus-hover-color);
-	transition: fill var(--animation-timing-function);}
+	
 }
 
 .field-tel-wrap {
@@ -159,7 +144,6 @@
 	transform: translateY(-50%);
 	cursor: var(--custom-pointer);
 }
-
 
 
 .field-email-wrap {
@@ -200,14 +184,11 @@
 }
 
 .comment-modale {
-	&:focus {border: 1px solid var(--focus-hover-color);
+	&:focus, &:hover {border: 1px solid var(--focus-hover-color);
 	outline-color: var(--focus-hover-color);
 	transition: fill var(--animation-timing-function);
 	cursor: var(--custom-pointer);}
-	&:hover {border: 1px solid var(--focus-hover-color);
-	outline-color: var(--focus-hover-color);
-	transition: fill var(--animation-timing-function);
-	cursor: var(--custom-pointer);}
+	
 }
 
 .modal-policy {
@@ -219,9 +200,7 @@
 
 .custom-checkbox {
 	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	@extend %centeredFlex;
 	width: 16px;
 	height: 15px;
 	border: solid 2px #212121;
@@ -237,40 +216,29 @@
 
 .icon-checkbox {
 	position: absolute;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	@extend %centeredFlex;
 	fill: transparent;
 }
 
 .text-checkbox {
-	display: flex;
+	@extend %centeredFlex;
 	flex-wrap: nowrap;
-	align-items: center;
-	justify-content: center;
-	font-size: 14px;
-	line-height: 1.71;
-	letter-spacing: 0.03em;
+	@extend %textMain;
 	color: var(--main-text-color);
 }
 
 .text-checkbox .policy-link {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	@extend %centeredFlex;
 	margin-left: 4px;
-	font-size: 14px;
-	line-height: 1.71px;
-	letter-spacing: 0.03em;
+	@extend %textMain;
 	text-decoration-line: underline;
 	color: var(--current-color);
 }
 
 .text-checkbox {
-	&:hover + .policy-link {outline-color: var(--focus-hover-color);
+	&:hover + .policy-link, &:focus + .policy-link {outline-color: var(--focus-hover-color);
 	border: 1px solid var(--focus-hover-color);}
-	&:focus + .policy-link {outline-color: var(--focus-hover-color);
-	border: 1px solid var(--focus-hover-color);}
+	
 }
 
 .checkbox-modale {
@@ -285,9 +253,7 @@
 	width: 200px;
 	height: 50px;
 	display: flex;
-	flex-direction: center;
-	justify-content: center;
-	align-items: center;
+	@extend %centeredFlex;
 	text-align: center;
 	border-style: none;
 	margin-right: auto;
