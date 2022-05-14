@@ -9,7 +9,9 @@
 }
 .our-benefits__list {
 	display: flex;
+	@extend %list;
 }
+
 .our-benefits__item {
 	flex-basis: calc((100% - 3 * 30px) / 3);
 }
@@ -41,6 +43,7 @@
 .main-directions__item {
 	position: relative;
 	flex-basis: calc((100% - 2 * 30px) / 3);
+	
 }
 
 .main-directions__item:not(:last-child) {
@@ -49,6 +52,7 @@
 
 .main-directions__list {
 	display: flex;
+	@extend %list;
 }
 
 .main-directions__title {

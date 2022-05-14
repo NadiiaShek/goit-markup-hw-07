@@ -1,0 +1,36 @@
+button {
+	cursor: pointer;
+}
+
+%list {
+	list-style: none;
+}
+
+.link-decoration {
+	text-decoration: none;
+	color: inherit;
+}
+
+.conteiner {
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+
+.visually-hidden {
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}

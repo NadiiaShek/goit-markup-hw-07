@@ -16,10 +16,12 @@
 	display: flex;
 	justify-content: center;
 	color: var(--color-soc-icons);
+	@extend %list;
 }
 
-.regular-clients__item + .regular-clients__item {
-	margin-left: 30px;
+.regular-clients__item  {
+	& + & {margin-left: 30px;}
+	
 }
 
 .regular-clients__link {
@@ -35,11 +37,7 @@
 	transition: color var(--animation-timing-function);
 }
 .regular-clients__link {
-	&:hover {border: 1px solid var(--focus-hover-color);
-	fill: var(--focus-hover-color);
-	transition: color var(--animation-timing-function);}
-    &:focus {
-	border: 1px solid var(--focus-hover-color);
+	&:hover, &:focus {border: 1px solid var(--focus-hover-color);
 	fill: var(--focus-hover-color);
 	transition: color var(--animation-timing-function);}
 	}

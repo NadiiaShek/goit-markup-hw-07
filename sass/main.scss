@@ -1,5 +1,7 @@
-@import './base/resets';
+
 @import './utils/variables';
+@import './utils/placeholders';
+@import './base/resets';
 @import './components/header';
 @import './components/hero';
 @import './components/benefits-direct';

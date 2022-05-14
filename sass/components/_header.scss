@@ -55,6 +55,7 @@
 .navigation__list {
 	display: flex;
 	margin-right: auto;
+	@extend %list;
 }
 
 .navigation {
@@ -70,9 +71,7 @@ header {
 }
 
 .list .link-decoration {
-	&:hover {color: var(--focus-hover-color);
-	transition: color var(--animation-timing-function);}
-	&:focus {color: var(--focus-hover-color);
+	&:hover, &:focus {color: var(--focus-hover-color);
 	transition: color var(--animation-timing-function);}
 	
 }
@@ -93,6 +92,7 @@ header {
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 	color: var(--contact-list-color);
+	@extend %list;
 }
 
 .contacts-group__item:not(:last-child) {
@@ -113,8 +113,7 @@ header {
 }
 
 .navigation__link {
-	&:hover {color: var(--focus-hover-color);
+	&:hover, &:focus {color: var(--focus-hover-color);
 	transition: color var(--animation-timing-function);}
-	&:focus {color: var(--focus-hover-color);
-	transition: color var(--animation-timing-function);}
+	
 }

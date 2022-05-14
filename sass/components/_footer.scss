@@ -39,6 +39,7 @@
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 	color: rgba(255, 255, 255, 0.6);
+	@extend %list;
 }
 .footer-contact__item:not(:last-child) {
 	margin-bottom: 9px;
@@ -48,12 +49,10 @@
 	transition: color var(--animation-timing-function);
 }
 .footer-contacts__link {
-	&:hover {color: var(--focus-hover-color);
+	&:hover, &:focus {color: var(--focus-hover-color);
 	transition: color var(--animation-timing-function);}
-	&:focus {color: var(--focus-hover-color);
-	transition: color var(--animation-timing-function);
 	}
-}
+
 
 .address-block {
 	display: flex;
@@ -100,6 +99,7 @@
 .social-footer__list {
 	display: flex;
 	justify-content: center;
+	@extend %list;
 }
 
 .social-footer__item + .social-footer__item {
@@ -118,9 +118,7 @@
 }
 
 .social-footer__link {
-	&:hover {background-color: var(--focus-hover-color);
-	transition: background-color var(--animation-timing-function);}
-	&:focus {background-color: var(--focus-hover-color);
+	&:hover, &:focus {background-color: var(--focus-hover-color);
 	transition: background-color var(--animation-timing-function);}
 	
 }
@@ -165,12 +163,8 @@
 	height: 50px;
 	margin-right: 12px;
 	padding-left: 16px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-
 	font-size: 16px;
 	line-height: 1.25;
-	display: flex;
 	align-items: center;
 	letter-spacing: 0.03em;
 	color: rgba(255, 255, 255, 0.6);
