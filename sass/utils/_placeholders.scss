@@ -16,26 +16,6 @@
     align-items: center;
 }
 
-%textSizeTitle3 {
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 1.14;
-	letter-spacing: 0.03em;
-}
-
-%textMain {
-	font-size: 14px;
-	line-height: 1.71;
-	letter-spacing: 0.03em;
-}
-
-%title2 {
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 1.16;
-	letter-spacing: 0.03em;
-}
-
 %fieldWrap {
 	position: relative;
 	display: flex;
@@ -58,3 +38,12 @@
 	fill: var(--focus-hover-color);
 	transition: fill var(--animation-timing-function);
 }
+
+@mixin font ($fw, $fs, $lh, $ls) {
+	font-weight: $fw;
+	font-size: $fs;
+	line-height: $lh;
+	letter-spacing: $ls;
+}
+
+

@@ -91,7 +91,7 @@
 .text-checkbox {
 	@extend %centeredFlex;
 	flex-wrap: nowrap;
-	@extend %textMain;
+	@include font(normal, 14px, 1.71, 0.03em);
 	color: var(--main-text-color);
 	
 }
@@ -99,7 +99,7 @@
 .policy-link {
 	@extend %centeredFlex;
 	margin-left: 4px;
-	@extend %textMain;
+	@include font(normal, 14px, 1.71, 0.03em);
 	text-decoration-line: underline;
 	color: var(--current-color);
 	.text-checkbox:hover + &, 	.text-checkbox:focus + & {outline-color: var(--focus-hover-color);

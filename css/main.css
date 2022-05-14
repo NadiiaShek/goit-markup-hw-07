@@ -36,26 +36,6 @@
   align-items: center;
 }
 
-.subscription-footer__title, .social-footer__title, .main-directions__label, .our-benefits__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-}
-
-.policy-link, .text-checkbox, .footer-contacts__list, .footer-address, .our-benefits__text {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-
-.regular-clients__title, .team__title, .main-directions__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-}
-
 .field-name-wrap,
 .field-tel-wrap,
 .field-email-wrap {
@@ -309,6 +289,10 @@ header {
 
 .our-benefits__title {
   margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
@@ -318,6 +302,10 @@ header {
 }
 
 .our-benefits__text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
 
@@ -337,6 +325,10 @@ header {
 .main-directions__title {
   margin-bottom: 50px;
   text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
   color: var(--body-text-color);
 }
 
@@ -355,6 +347,10 @@ header {
   text-transform: uppercase;
   background: rgba(47, 48, 58, 0.8);
   color: var(--second-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
 }
 
 .team {
@@ -365,6 +361,10 @@ header {
 
 .team__title {
   margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
   text-align: center;
 }
 
@@ -551,6 +551,10 @@ header {
 .regular-clients__title {
   margin-bottom: 50px;
   text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
 }
 
 .regular-clients__list {
@@ -601,11 +605,19 @@ header {
 .footer-address {
   margin-bottom: 9px;
   font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
 
 .footer-contacts__list {
   font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -639,6 +651,9 @@ header {
   height: 80px;
   margin-left: 70px;
 }
+.social-footer__item + .social-footer__item {
+  margin-left: 10px;
+}
 
 .subscription-footer {
   display: flex;
@@ -653,6 +668,10 @@ header {
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
   font-style: normal;
   text-transform: uppercase;
   color: var(--second-text-color);
@@ -661,10 +680,6 @@ header {
 .social-footer__list {
   display: flex;
   justify-content: center;
-}
-
-.social-footer__item + .social-footer__item {
-  margin-left: 10px;
 }
 
 .social-footer__link {
@@ -703,6 +718,10 @@ header {
   display: flex;
   margin-left: 0;
   margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--second-text-color);
 }
@@ -823,11 +842,19 @@ header {
 
 .text-checkbox {
   flex-wrap: nowrap;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
 
 .policy-link {
   margin-left: 4px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: var(--current-color);
 }
