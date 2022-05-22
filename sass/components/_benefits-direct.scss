@@ -48,12 +48,6 @@
 	@extend %list;
 }
 
-.main-directions__title {
-	margin-bottom: 50px;
-	text-align: center;
-    @include font(700, 36px, 1.16, 0.03em);
-	color: var(--body-text-color);
-}
 
 .main-directions {
 	display: flex;

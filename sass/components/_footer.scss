@@ -7,22 +7,6 @@
 	background-color: var(--second-background);
 }
 
-.footer-contacts__logo {
-	display: inline-block;
-	margin-bottom: 20px;
-
-	font-family: "Raleway", sans-serif;
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 1.19;
-	letter-spacing: 0.03em;
-	color: var(--second-text-color);
-	@extend %link-decoration
-}
-
-.span {
-	color: var(--logo-part-color);
-}
 
 .footer-address {
 	margin-bottom: 9px;

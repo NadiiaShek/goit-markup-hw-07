@@ -24,6 +24,25 @@
 	transition: color var(--animation-timing-function);
 }
 
+%logoHeader {
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+	color: #000000;
+}
+
+%logoFooter {
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+	color: #ffffff;
+}
+
+
 %iconModale {
 	position: absolute;
 	display: flex;
